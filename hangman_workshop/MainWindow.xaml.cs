@@ -34,15 +34,7 @@ namespace hangman_workshop
             InitializeComponent();
         }
 
-        private void letterGokButton_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
-        private void setBoxButton_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
+        
 
         
 
