@@ -1,0 +1,15 @@
+C:\Users\robbe\source\repos\hangman_workshop\hangman_workshop\bin\Debug\hangman_workshop.exe.config
+C:\Users\robbe\source\repos\hangman_workshop\hangman_workshop\bin\Debug\hangman_workshop.exe
+C:\Users\robbe\source\repos\hangman_workshop\hangman_workshop\bin\Debug\hangman_workshop.pdb
+C:\Users\robbe\source\repos\hangman_workshop\hangman_workshop\obj\Debug\hangman_workshop.csproj.AssemblyReference.cache
+C:\Users\robbe\source\repos\hangman_workshop\hangman_workshop\obj\Debug\MainWindow.g.cs
+C:\Users\robbe\source\repos\hangman_workshop\hangman_workshop\obj\Debug\App.g.cs
+C:\Users\robbe\source\repos\hangman_workshop\hangman_workshop\obj\Debug\hangman_workshop_MarkupCompile.cache
+C:\Users\robbe\source\repos\hangman_workshop\hangman_workshop\obj\Debug\hangman_workshop_MarkupCompile.lref
+C:\Users\robbe\source\repos\hangman_workshop\hangman_workshop\obj\Debug\MainWindow.baml
+C:\Users\robbe\source\repos\hangman_workshop\hangman_workshop\obj\Debug\hangman_workshop.g.resources
+C:\Users\robbe\source\repos\hangman_workshop\hangman_workshop\obj\Debug\hangman_workshop.Properties.Resources.resources
+C:\Users\robbe\source\repos\hangman_workshop\hangman_workshop\obj\Debug\hangman_workshop.csproj.GenerateResource.cache
+C:\Users\robbe\source\repos\hangman_workshop\hangman_workshop\obj\Debug\hangman_workshop.csproj.CoreCompileInputs.cache
+C:\Users\robbe\source\repos\hangman_workshop\hangman_workshop\obj\Debug\hangman_workshop.exe
+C:\Users\robbe\source\repos\hangman_workshop\hangman_workshop\obj\Debug\hangman_workshop.pdb
