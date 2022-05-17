@@ -32,8 +32,6 @@ namespace hangman_workshop
         public MainWindow()
         {
             InitializeComponent();
-
-            
         }
 
         private void letterGokButton_Click(object sender, RoutedEventArgs e)
