@@ -1,7 +1,29 @@
-<Button  Name="letterGokButton" Content="gok" HorizontalAlignment="Left" Margin="256,338,0,0" VerticalAlignment="Top" Width="75" Click="letterGokButton_Click"/>
-        <TextBox MaxLength="1" Name="gokTextBox" HorizontalAlignment="Left" Height="23" Margin="101,334,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="setWordTextBox" HorizontalAlignment="Left" Height="23" Margin="101,191,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="setBoxButton" Content="set" HorizontalAlignment="Left" Margin="256,190,0,0" VerticalAlignment="Top" Width="75" Click="setBoxButton_Click"/>
-        <TextBlock Name="wordTextBlock" HorizontalAlignment="Left" Margin="197,77,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="134"/>
-        <TextBlock x:Name="lengthTextBlock" HorizontalAlignment="Left" Margin="442,77,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="134"/>
-        <Canvas Name="hangManCanvas" HorizontalAlignment="Left" Height="300" Margin="442,93,0,0" VerticalAlignment="Top" Width="300"/>
+if (heeftGewonnen)
+            {
+                MessageBox.Show("ge hebt het al geraden");
+                return false;
+            }
+            else if (heeftVerloren)
+            {
+                MessageBox.Show("ge zijt dood");
+                return false;
+            }
+            else if (gebruikteLetters.Contains(gok))
+            {
+                MessageBox.Show("letter al gebruikt");
+                return false;
+            } 
+            else if (gok == "")
+            {
+                MessageBox.Show("je hebt geen letter gezed");
+                return false;
+            }
+            else if (gok.Any(char.IsDigit))
+            {
+                MessageBox.Show("geef een letter geen nummer");
+                return false;
+            }
+            else
+            {
+                return true;
+            }
