@@ -1,29 +1,57 @@
-if (heeftGewonnen)
+
+        public void FouteGok()
+        {
+            aantalMisGokken++;
+            
+            switch (aantalMisGokken)
             {
-                MessageBox.Show("ge hebt het al geraden");
-                return false;
+                case 1:
+                    TekenCirkel(40,40,130,110); //hoofd
+                    break;
+                case 2:
+                    TekenLijn(150, 150, 150, 200); //lichaam
+                    break;
+                case 3:
+                    TekenLijn(150, 160, 130, 200); //linker arm
+                    break;
+                case 4:
+                    TekenLijn(150, 160, 170, 200); // rechter arm
+                    break;
+                case 5:
+                    TekenLijn(150, 200, 130, 250); // linker been
+                    break;
+                default:
+                    TekenLijn(150, 200, 170, 250); //rechter been
+                    heeftVerloren = true;
+                    MessageBox.Show("ge zijt verloren");
+                    break;
             }
-            else if (heeftVerloren)
-            {
-                MessageBox.Show("ge zijt dood");
-                return false;
-            }
-            else if (gebruikteLetters.Contains(gok))
-            {
-                MessageBox.Show("letter al gebruikt");
-                return false;
-            } 
-            else if (gok == "")
-            {
-                MessageBox.Show("je hebt geen letter gezed");
-                return false;
-            }
-            else if (gok.Any(char.IsDigit))
-            {
-                MessageBox.Show("geef een letter geen nummer");
-                return false;
-            }
-            else
-            {
-                return true;
-            }
+        }
+
+        public void TekenCirkel(int breedte, int hoogte, int x_as, int y_as)
+        {
+            Ellipse cirkel = new Ellipse();
+            cirkel.Width = breedte;
+            cirkel.Height = hoogte;
+            cirkel.Margin = new Thickness(x_as, y_as, 0, 0);
+            cirkel.Stroke = new SolidColorBrush(Colors.Black);
+            cirkel.Fill = new SolidColorBrush(Colors.Red);
+
+            hangManCanvas.Children.Add(cirkel);
+
+        }
+ 
+        public void TekenLijn(int x1, int y1, int x2, int y2)
+        {
+            Line lijn = new Line();
+            lijn.X1 = x1;
+            lijn.Y1 = y1;
+            lijn.X2 = x2;
+            lijn.Y2 = y2;
+
+            lijn.Stroke = new SolidColorBrush(Colors.Black);
+            
+
+            hangManCanvas.Children.Add(lijn);
+        }
+    }
